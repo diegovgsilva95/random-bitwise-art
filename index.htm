@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitwise Art</title>
+    <style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    td, th {
+        border: 1px solid black;
+        padding: 5px;
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+
+    <section>
+        <b>Currently calculating: </b>
+        <button>Stop!</button>
+        <br />
+        <span id="curr-formula"></span>
+    </section>
+    
+    <canvas width="256" height="256"></canvas>
+    
+    <section>
+        <b>History:</b>
+        <table>
+            <thead>
+                <tr>
+                    <td>Formula</td>
+                    <td>Iterations</td>
+                    <td>Snapshot</td>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </section>
+
+    <script type="module" src="js/index.mjs"></script>
+    
+</body>
+</html>
